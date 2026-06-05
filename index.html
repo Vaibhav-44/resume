@@ -18,6 +18,11 @@
     </style>
 </head>
 <body>
-    <iframe src="resume.pdf"></iframe>
+    <iframe id="resumeFrame"></iframe>
+
+    <script>
+        document.getElementById('resumeFrame').src =
+            'resume.pdf?v=' + new Date().getTime();
+    </script>
 </body>
 </html>
